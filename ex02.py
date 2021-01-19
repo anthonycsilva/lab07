@@ -13,6 +13,7 @@ def cria_contato(nome,telefone='',email = '', instagram=''):
             return lista_contatos 
 
 def popula_lista():
+    '''Essa função popula a lista_contatos, para a utilização dela em outras funções'''
     k = 0
     while k < 10 :
         cria_contato('Bruno Campos', ['2199112233',], 'brunoc91@emailquente.com.br', '@brunocampos91')
@@ -58,8 +59,9 @@ def atualiza_contato(contato, atributo, info):
 
 
 def busca_contato(lista, nome):
-    contador = 0
-    i = 0
+    '''Essa função recebe uma lista específica e retorna as ocorrencias do nome escrito'''
+    contador = int()
+    i = int()
     nomes_encontrados = list()
     
     while i<len(lista):        
