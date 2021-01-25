@@ -71,10 +71,9 @@ def busca_contato(lista, nome):
             contador = contador+1
         i = i+1
         #
-    return print(nomes_encontrados)
-    
+    print('=-'*20)
+    return print(nomes_encontrados,contador)
 popula_lista()
-busca_contato(lista_contatos,'Diego')
-
+busca_contato(lista_contatos,'Samara')
 
 
